@@ -7,7 +7,6 @@ what is the Boolean value of the statement “it is possible to get from the sta
 if it is possible, how can we… v0?
 
 all ways
-
 shortest way (vn)
 
 ## Recursive Abstraction 
