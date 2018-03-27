@@ -13,11 +13,8 @@ what is the Boolean value of the statement “it is possible to get from the sta
 ## Recursive Abstraction 
 
 When I am asked to 
-
 find the Boolean value of the statement “it is possible to get from the starting position to treasure”, 
-
 the recurisve abstraction can 
-
 find the Boolean value of the statement “it is possible to get from the starting position to treasure” in either the north, west, east, or south direction after I have taken one step in some direction.
 
 ## Base Case
@@ -25,12 +22,12 @@ find the Boolean value of the statement “it is possible to get from the starti
 It is possible to get from the starting position to treasure.
 
 ## English or pseudocode description of algorithm
-'''
+```
 if it is possible to get from the starting position to treasure
   record the solution
 else \\recursive case
   TBA...
-'''
+```
 ## class(es), with fields and methods
 
 TBA...
