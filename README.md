@@ -24,7 +24,23 @@ The situation that would require the least amount of work is if the starting pos
 if the starting position is the treasure \\base case
   record the solution
 else \\recursive case
-  TBA...
+  walk south
+    if isLegal
+      invoke recurisve abstraction
+    else 
+      walk west
+        if isLegal 
+          invoke recursive abstraction
+        else 
+          walk north
+            if isLegal
+              invoke recursive abstraction
+            else 
+              walk east
+                if is Legal
+                  invoke recursive abstraction
+                else 
+                  retrace our steps till a solution is found or all possibilities are exhausted 
 ```
 ## class(es), with fields and methods
 
