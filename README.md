@@ -2,8 +2,7 @@
 # Maze Project [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 ## Personnel
 
-Lee,Yuenhigh
-Mai,Justin
+By: Lee,Yuenhigh and Mai,Justin
 
 ## Problem Statement
 
