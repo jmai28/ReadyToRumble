@@ -13,8 +13,11 @@ What is the Boolean value of the statement “it is possible to get from the sta
 ## Recursive Abstraction 
 
 When I am asked to\ 
+
 find the Boolean value of the statement “it is possible to get from the starting position to treasure”\ 
+
 the recurisve abstraction can\ 
+
 find the Boolean value of the statement “it is possible to get from the starting position to treasure” in either the north, west, east, or south direction after I have taken one step in some direction.
 
 ## Base Case
