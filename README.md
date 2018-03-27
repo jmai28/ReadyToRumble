@@ -8,12 +8,15 @@ if it is possible, how can we… v0?
 
 all ways
 
-shortest way (vn)
+shortest way (v.N)
 
 ## Recursive Abstraction 
 
 TBA...
 
 ## Personnel
+
+Lee,Yuenhigh
+Mai,Justin
 
 ## Version *N* wishlist
