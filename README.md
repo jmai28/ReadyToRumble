@@ -38,6 +38,7 @@ else \\recursive case
 * Methods
   * IsLegal
   * PathFinder
+  * SolveMaze
 * Fields
   * int array
   * arraylist???
