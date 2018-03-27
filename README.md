@@ -2,26 +2,40 @@
 # Maze Project [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 ## Personnel
 
-By: Lee,Yuenhigh and Mai,Justin
+Lee,Yuenhigh
+
+Mai,Justin
 
 ## Problem Statement
 
 what is the Boolean value of the statement “it is possible to get from the starting position to treasure”
 
-if it is possible, how can we… v0?
-
-all ways
-
-shortest way (v.N)
-
 ## Recursive Abstraction 
 
-TBA...
+When I am asked to 
+
+find the Boolean value of the statement “it is possible to get from the starting position to treasure”, 
+
+the recurisve abstraction can 
+
+find the Boolean value of the statement “it is possible to get from the starting position to treasure” in either the north, west, east, or south direction after I have taken one step in some direction.
 
 ## Base Case
 
-## English or pseudocode description of algorithm
+It is possible to get from the starting position to treasure.
 
+## English or pseudocode description of algorithm
+'''
+if it is possible to get from the starting position to treasure
+  record the solution
+else \\recursive case
+  TBA...
+'''
 ## class(es), with fields and methods
 
+TBA...
+
 ## Version *N* wishlist
+-One solution
+-Fastest solution
+-All solutions(assuming there is more than one)
