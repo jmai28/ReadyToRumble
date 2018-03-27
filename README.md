@@ -30,7 +30,17 @@ else \\recursive case
 ```
 ## class(es), with fields and methods
 
-TBA...
+* Classes
+  * MazeSolver
+  * UserOfMazeSolver
+  * MazeMaker???
+  * UserOfMazeMaker???
+* Methods
+  * IsLegal
+  * PathFinder
+* Fields
+  * int array
+  * arraylist???
 
 ## Version *N* wishlist
 * One solution
