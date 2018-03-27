@@ -21,7 +21,7 @@ It is possible to get from the starting position to treasure.
 
 ## English or pseudocode description of algorithm
 ```
-if it is possible to get from the starting position to treasure
+if it is possible to get from the starting position to treasure \\base case
   record the solution
 else \\recursive case
   TBA...
