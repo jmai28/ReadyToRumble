@@ -21,7 +21,7 @@ The situation that would require the least amount of work is if the starting pos
 
 ## English or pseudocode description of algorithm
 ```
-if no possible path to take // base case
+if no possible path to take // maybe put this in maze solver
   return false;
 if the starting position is the treasure // base case
   record the solution
@@ -57,9 +57,11 @@ else // recursive case
   * IsLegal
   * PathFinder
   * SolveMaze
-    * IfPos
+    * IfPossible
 * Fields
   * int array
+  * rank
+  * file
   * arraylist???
 
 ## Version *N* wishlist
