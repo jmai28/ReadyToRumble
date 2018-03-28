@@ -21,8 +21,6 @@ The situation that would require the least amount of work is if the starting pos
 
 ## English or pseudocode description of algorithm
 ```
-if no possible path to take // maybe put this in maze solver
-  return false;
 if the starting position is the treasure // base case
   record the solution
 else // recursive case
@@ -43,7 +41,7 @@ else // recursive case
       invoke recursive abstraction 
     walk back
     
-  return // End
+  return false // End
      
 ```
 ## class(es), with fields and methods
@@ -57,7 +55,14 @@ else // recursive case
   * IsLegal
   * PathFinder
   * SolveMaze
-    * IfPossible
+    * Will use PathFinder
+      ```
+      if PathFinder is true
+        return solution
+      else 
+        tell the user that there is no possible path to the treasure
+
+      ```
 * Fields
   * int array
   * rank
