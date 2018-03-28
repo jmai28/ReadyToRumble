@@ -25,7 +25,7 @@ if the starting position is the treasure // base case
   record the solution
 else // recursive case
   walk south
-    if isLegal
+    if isLegal // Cannot be a wall or a previous spot or not in the maze
       invoke recurisve abstraction
     walk back
   walk west
