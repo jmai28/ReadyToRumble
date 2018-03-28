@@ -21,9 +21,9 @@ The situation that would require the least amount of work is if the starting pos
 
 ## English or pseudocode description of algorithm
 ```
-if the starting position is the treasure //base case
+if the starting position is the treasure // base case
   record the solution
-else //recursive case
+else // recursive case
   walk south
     if isLegal
       invoke recurisve abstraction
