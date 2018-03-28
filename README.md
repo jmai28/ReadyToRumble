@@ -41,8 +41,7 @@ else // recursive case
       invoke recursive abstraction 
     walk back
     
-  return false // End
-     
+  return false // End    
 ```
 ## class(es), with fields and methods
 
@@ -61,7 +60,6 @@ else // recursive case
         return solution
       else 
         tell the user that there is no possible path to the treasure
-
       ```
 * Fields
   * int array
