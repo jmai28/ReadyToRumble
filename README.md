@@ -20,7 +20,7 @@ find the Boolean value of the statement “it is possible to get from the starti
 On further examination this base case does not sufficiently answer the problem statement. Though it is answered in the pseudocode, we forgot to include it in the base case section. Revision below.
 
 If the starting position is the treasure, return true.
-If the starting position isLegal, return false.
+If the starting position returns is not Legal, return false.
 If it is not, continue with the recursive abstraction.
 If the recursive abstraction ends, then return false (a return false at the end of the code).
 
@@ -32,8 +32,11 @@ if the starting position is the treasure // base case
 else if the starting position is not legal // not a stepping stone
   return false
 else // recursive case
+  Drop a wall on current location of explorer // This is to prevent the program from looping forever
+  // Program will walk back onto this spot, and will still work even with a wall. If all the junctions are
+  // invalidated, it would completely seal off the paths, preventing the code from ever running through the path again.
   walk south
-    if isLegal // Cannot be a wall or a previous spot or not in the maze
+    if isLegal // Cannot be a wall (or a previous spot or not in the maze) (dropping a wall serves to solve this problem)
       invoke recurisve abstraction
     walk back
   walk west
