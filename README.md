@@ -82,3 +82,5 @@ else // recursive case
 * One solution
 * Fastest solution
 * All solutions(assuming there is more than one)
+
+## Known Bugs
