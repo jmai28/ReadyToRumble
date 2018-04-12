@@ -30,25 +30,25 @@ public class MazeSolver {
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    maze.go(Maze.NORTH);
+	    Maze maze = new Maze(snapshot);
 
 	    maze.go(Maze.NORTH);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    maze.go(Maze.SOUTH);
+	    Maze maze = new Maze(snapshot);
 
 	    maze.go(Maze.WEST);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    maze.go(Maze.EAST);
+	    Maze maze = new Maze(snapshot);
 
 	    maze.go(Maze.EAST);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    maze.go(Maze.WEST);
+	    Maze maze = new Maze(snapshot);
 
 
 
@@ -56,7 +56,7 @@ public class MazeSolver {
 	return false;
     }
 
-    public mazeSolver( String mazeToSolve, int rank, int file)
+    public MazeSolver( String mazeToSolve, int rank, int file)
 	throws java.io.FileNotFoundException{
 	Maze copy = new Maze( mazeToSolve, rank, file);
 	// The Recursive Abstraction will be added in the forseeable future
