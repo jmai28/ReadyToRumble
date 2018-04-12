@@ -56,7 +56,7 @@ public class MazeSolver {
 	return false;
     }
 
-    public MazeSolver( String mazeToSolve, int rank, int file)
+    public boolean mazeSolver( String mazeToSolve, int rank, int file)
 	throws java.io.FileNotFoundException{
 	Maze copy = new Maze( mazeToSolve, rank, file);
 	// The Recursive Abstraction will be added in the forseeable future
