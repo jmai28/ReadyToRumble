@@ -4,18 +4,18 @@ public class MazeSolver {
 
     // public static void main(String[] commandLine)
     // 	throws java.io.FileNotFoundException{
-	
+
     // 	Maze maze = new Maze( commandLine[0]
     // 			      , Integer.parseInt( commandLine[1])
     // 			      , Integer.parseInt( commandLine[2])
     // 			      );
     // }
-    
+
     public boolean ifSolvable(){
 	// Snapshot
 	// Not sure when we use snapshot, so i'll place it here for now
 	Maze snapshot = new Maze(maze);
-	
+
 	// Base Case
 	if (maze.explorerIsOnA()== 0){
 	    return true;
@@ -25,7 +25,7 @@ public class MazeSolver {
 	}
 	else{
 	    maze.dropA(1);
-	    
+
 	    maze.go(Maze.SOUTH);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
@@ -50,22 +50,22 @@ public class MazeSolver {
 	    }
 	    maze.go(Maze.WEST);
 
-	    
-	
+
+
 	}
 	return false;
     }
 
-    public MazeSolver( String mazeToSolve, int rank, int file)
+    public mazeSolver( String mazeToSolve, int rank, int file)
 	throws java.io.FileNotFoundException{
 	Maze copy = new Maze( mazeToSolve, rank, file);
 	// The Recursive Abstraction will be added in the forseeable future
-	
+
     }
 
     public static void main(String[] args){
     }
 
 
-    
+
 }
