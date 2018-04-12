@@ -11,7 +11,7 @@ public class MazeSolver {
     // 			      );
     // }
 
-    public boolean ifSolvable(){
+    private boolean ifSolvable(){
 	// Snapshot
 	// Not sure when we use snapshot, so i'll place it here for now
 	Maze snapshot = new Maze(maze);
@@ -30,25 +30,25 @@ public class MazeSolver {
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    Maze maze = new Maze(snapshot);
+	    maze = new Maze(snapshot);
 
 	    maze.go(Maze.NORTH);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    Maze maze = new Maze(snapshot);
+	    maze = new Maze(snapshot);
 
 	    maze.go(Maze.WEST);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    Maze maze = new Maze(snapshot);
+	    maze = new Maze(snapshot);
 
 	    maze.go(Maze.EAST);
 	    if (maze.explorerIsOnA() == 2){
 		ifSolvable();
 	    }
-	    Maze maze = new Maze(snapshot);
+	    maze = new Maze(snapshot);
 
 
 
@@ -60,7 +60,7 @@ public class MazeSolver {
 	throws java.io.FileNotFoundException{
 	Maze copy = new Maze( mazeToSolve, rank, file);
 	// The Recursive Abstraction will be added in the forseeable future
-
+	return ifSolvable();
     }
 
     public static void main(String[] args){
