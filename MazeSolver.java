@@ -17,10 +17,10 @@ public class MazeSolver {
 	Maze snapshot = new Maze(maze);
 
 	// Base Case
-	if (maze.explorerIsOnA()== 0){
+	if (maze.explorerIsOnA()== Maze.TREASURE){
 	    return true;
 	}
-	else if (maze.explorerIsOnA() != 2){
+	else if (maze.explorerIsOnA() != Maze.STEPPING_STONE){
 	    return false;
 	}
 	else{
