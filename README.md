@@ -82,5 +82,6 @@ else // recursive case
 * One solution
 * Fastest solution
 * All solutions(assuming there is more than one)
+* A method to catch out of the maze moves
 
 ## Known Bugs
