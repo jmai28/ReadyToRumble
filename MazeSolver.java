@@ -13,50 +13,58 @@ public class MazeSolver {
 
     private static boolean ifSolvable(){
 
-	
-	Maze snapshot = new Maze(maze);
-
 	// Base Case
-	System.out.println("Runs Recursive Abstraction");
+	//	System.out.println("Runs Recursive Abstraction");
 	
 	if (maze.explorerIsOnA()== Maze.TREASURE){
 	    System.out.println("Running 1st Case");
 	    return true;
 	}
 	else if (maze.explorerIsOnA() != Maze.STEPPING_STONE){
-	    System.out.println("Running 2nd Case");
+	    //  System.out.println("Running 2nd Case");
 	    return false;
 	}
-	 // else{
-	 //     maze.dropA(1);
+	  else{
+	      //System.out.println("runs last resort");
 
-	 //     maze.go(Maze.SOUTH);
-	 //     if (maze.explorerIsOnA() == 2){
-	 // 	ifSolvable();
-	 //     }
-	 //     maze = new Maze(snapshot);
+	      maze.dropA(1);
+	      
+	      Maze snapshot = new Maze(maze);
+	      // System.out.println(maze == snapshot);
+	      
 
-	 //     maze.go(Maze.NORTH);
-	 //     if (maze.explorerIsOnA() == 2){
-	 // 	ifSolvable();
-	 //     }
-	 //     maze = new Maze(snapshot);
+	      maze.go(Maze.SOUTH);
+	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+		  System.out.println("Running Recursive Abstraction South");
+		  ifSolvable();
+	      }
+	      maze = new Maze(snapshot);
 
-	 //     maze.go(Maze.WEST);
-	 //     if (maze.explorerIsOnA() == 2){
-	 // 	ifSolvable();
-	 //     }
-	 //     maze = new Maze(snapshot);
+	      maze.go(Maze.EAST);
+	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+		  System.out.println("Running Recursive Abstraction East");
+		  ifSolvable();
+	      }
+	      maze = new Maze(snapshot);
 
-	 //     maze.go(Maze.EAST);
-	 //     if (maze.explorerIsOnA() == 2){
-	 // 	ifSolvable();
-	 //     }
-	 //     maze = new Maze(snapshot);
+	      maze.go(Maze.NORTH);
+	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+		  System.out.println("Running Recursive Abstraction North");
+		  ifSolvable();
+	      }
+	      maze = new Maze(snapshot);
+
+	      maze.go(Maze.WEST);
+	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+		  System.out.println("Running Recursive Abstraction West");
+		  ifSolvable();
+	      }
+	      maze = new Maze(snapshot);
 
 
 
-	 // }
+
+	  }
 	System.out.println("Base Cases didn't snag, so return false");
 	return false;
     }
