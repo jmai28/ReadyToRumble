@@ -2,22 +2,13 @@ public class MazeSolver {
 
     public static Maze maze;
 
-    // public static void main(String[] commandLine)
-    // 	throws java.io.FileNotFoundException{
-
-    // 	Maze maze = new Maze( commandLine[0]
-    // 			      , Integer.parseInt( commandLine[1])
-    // 			      , Integer.parseInt( commandLine[2])
-    // 			      );
-    // }
-
     private static boolean ifSolvable(){
 
 	// Base Case
 	//	System.out.println("Runs Recursive Abstraction");
 	
 	if (maze.explorerIsOnA()== Maze.TREASURE){
-	    System.out.println("Running 1st Case");
+	    // System.out.println("Running 1st Case");
 	    return true;
 	}
 	else if (maze.explorerIsOnA() != Maze.STEPPING_STONE){
@@ -35,29 +26,37 @@ public class MazeSolver {
 
 	      maze.go(Maze.SOUTH);
 	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
-		  System.out.println("Running Recursive Abstraction South");
-		  ifSolvable();
+		  // System.out.println("Running Recursive Abstraction South");
+		  if(ifSolvable()){
+		      return true;
+		  }
 	      }
 	      maze = new Maze(snapshot);
 
 	      maze.go(Maze.EAST);
 	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
-		  System.out.println("Running Recursive Abstraction East");
-		  ifSolvable();
+		  // System.out.println("Running Recursive Abstraction East");
+		  if(ifSolvable()){
+		      return true;
+		  }
 	      }
 	      maze = new Maze(snapshot);
 
 	      maze.go(Maze.NORTH);
 	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
-		  System.out.println("Running Recursive Abstraction North");
-		  ifSolvable();
+		  // System.out.println("Running Recursive Abstraction North");
+		  if(ifSolvable()){
+		      return true;
+		  }
 	      }
 	      maze = new Maze(snapshot);
 
 	      maze.go(Maze.WEST);
 	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
-		  System.out.println("Running Recursive Abstraction West");
-		  ifSolvable();
+		  // System.out.println("Running Recursive Abstraction West");
+		  if(ifSolvable()){
+		      return true;
+		  }
 	      }
 	      maze = new Maze(snapshot);
 
@@ -65,7 +64,7 @@ public class MazeSolver {
 
 
 	  }
-	System.out.println("Base Cases didn't snag, so return false");
+	//	System.out.println("Base Cases didn't snag, so return false");
 	return false;
     }
 
