@@ -6,7 +6,7 @@ public class MazeSolver {
 
 	// Base Case
 	//	System.out.println("Runs Recursive Abstraction");
-	
+
 	if (maze.explorerIsOnA()== Maze.TREASURE){
 	    // System.out.println("Running 1st Case");
 	    return true;
@@ -19,45 +19,45 @@ public class MazeSolver {
 	      //System.out.println("runs last resort");
 
 	      maze.dropA(1);
-	      
+
 	      Maze snapshot = new Maze(maze);
 	      // System.out.println(maze == snapshot);
-	      
+
 
 	      maze.go(Maze.SOUTH);
-	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+	      
 		  // System.out.println("Running Recursive Abstraction South");
 		  if(ifSolvable()){
 		      return true;
 		  }
-	      }
+
 	      maze = new Maze(snapshot);
 
 	      maze.go(Maze.EAST);
-	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+
 		  // System.out.println("Running Recursive Abstraction East");
 		  if(ifSolvable()){
 		      return true;
 		  }
-	      }
+
 	      maze = new Maze(snapshot);
 
 	      maze.go(Maze.NORTH);
-	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+
 		  // System.out.println("Running Recursive Abstraction North");
 		  if(ifSolvable()){
 		      return true;
 		  }
-	      }
+
 	      maze = new Maze(snapshot);
 
 	      maze.go(Maze.WEST);
-	      if (maze.explorerIsOnA() == Maze.STEPPING_STONE || maze.explorerIsOnA() == Maze.TREASURE){
+
 		  // System.out.println("Running Recursive Abstraction West");
 		  if(ifSolvable()){
 		      return true;
 		  }
-	      }
+
 	      maze = new Maze(snapshot);
 
 
