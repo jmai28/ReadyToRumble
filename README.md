@@ -85,3 +85,7 @@ else // recursive case
 * A method to catch out of the maze moves
 
 ## Known Bugs
+
+## version 1
+
+* Making code more efficient by removing the if statements that have LOST their value
