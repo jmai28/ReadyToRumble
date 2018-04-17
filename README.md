@@ -83,6 +83,7 @@ else // recursive case
 * Fastest solution
 * All solutions(assuming there is more than one)
 * A method to catch out of the maze moves
+* Handle exceptional conditions
 
 ## Known Bugs
 
